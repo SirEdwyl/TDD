@@ -9,6 +9,11 @@ namespace ExoTDD.MSTest
     {
         //Implémenter une fonctionnalité de recherche de ville.La fonction prend une chaîne(texte de recherche) en entrée et renvoie les villes trouvées qui correspondent au texte de recherche.
         //Exemple de villes : Paris, Budapest, Skopje, Rotterdam, Valence, Vancouver, Amsterdam, Vienne, Sydney, New York, Londres, Bangkok, Hong Kong, Dubaï, Rome, Istanbul
+        public void TrouverVille()
+        {
+            //Liste des villes
+            List<string> villes = new List<string>() { "Paris", "Budapest", "Skopje", "Rotterdam", "Valence", "Vancouver", "Amsterdam", "Vienne", "Sydney", "New York", "Londres", "Bangkok", "Hong Kong", "Dubaï", "Rome", "Istanbul" };
+        }
 
         //Etapes du projet:
         //1. Si le texte de la recherche contient moins de 2 caractères, ***Une exception est levée de type NotFoundException***.
@@ -22,8 +27,6 @@ namespace ExoTDD.MSTest
         //   Par exemple "ape" devrait renvoyer la ville "Budapest"
 
         //5. Si le texte de recherche est un « * » (astérisque), il doit renvoyer tous les noms de ville.
-
-
 
         //Vous devrez développer en appliquant les principes du TDD et étape par étape. 
         //Pour ce faire vous utiliserez Git et vous ferez un commit** AVANT CHAQUE TEST** et** AVANT CHAQUE MODIFICATION** de la fonction Rechercher.
