@@ -4,9 +4,9 @@
     {
         private List<String> _villes;
 
-        public RechercheVille()
+        public RechercheVille(List<string> villes)
         {
-            _villes = new List<String>();
+            _villes = villes;
         }
         public List<String> Rechercher(String mot)
         {
